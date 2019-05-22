@@ -1,0 +1,136 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+% \usepackage{NotoSansSC_external}
+% \usepackage{NotoSerifCJKsc_external}
+% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{郑湛东}
+
+\basicInfo{
+  \email{zzdsakura@gmail.com} \textperiodcentered\ 
+  \phone{(+86) 158-100-58975} 
+  }
+ 
+\section{\faGraduationCap\  教育背景}
+\datedsubsection{\textbf{北京林业大学}, 北京}{2016 -- 至今}
+\textit{在读本科生}\ 网络工程专业, 预计 2020 年 7 月毕业
+
+\section{\faGithubAlt\ 工具项目}
+\datedsubsection{\textbf{zorm}}{\url{https://github.com/Victordong/zorm}}
+\role{Golang, Linux}{个人项目}
+\begin{onehalfspacing}
+学习于gorm的一个golang orm
+\begin{itemize}
+  \item curd实现
+  \item 事务功能实现
+  \item 根据业务需要内置假删除
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{easy api}}{\url{https://github.com/Victordong/async_easyapi}}
+\role{Python, Linux}{团队项目}
+\begin{onehalfspacing}
+基于 sqlalchemy, flask 的 sync版本
+
+基于 sqlalchemy, quart 的 async版本
+
+简化curd处理逻辑, 通过类的继承实现单独表的curd
+\begin{itemize}
+  \item 简化curd逻辑
+  \item 封装事务
+  \item 封装自己的错误处理
+  \item 已投入生产使用
+\end{itemize}
+\end{onehalfspacing}
+
+\section{\faUsers\ 商业项目}
+
+\datedsubsection{\textbf{北京林业大学督导系统后端}}{\url{https://github.com/Victordong/bjfu_supervision_back}}
+\role{Python, Linux}{团队项目}
+\begin{onehalfspacing}
+校内督导给教师课程进行评价的系统
+
+工作
+\begin{itemize}
+  \item 完成大部分后端编写任务,并在完成基本功能后进行了重构
+  \item 参与数据库表的设计
+  \item 和前端协商实现自己的url参数处理,简化代码量
+  \item 使用mongodb存储问卷表结构和数据,便于更新问卷表结构
+  \item 使用kafka降低后端模块间的耦合
+  \item 利用redis存储计算数据降低系统负载
+  \item 前后端分离, 结合restful思想
+\end{itemize}
+关键词
+
+flask, mysql, mongodb, redis, kafka
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{自动配肥机后端}}{\url{}}
+\role{Golang, Linux}{团队项目}
+\begin{onehalfspacing}
+配肥机的服务端, 用于管理肥料数据, 计算配肥价格及元素含量
+
+工作
+\begin{itemize}
+  \item 完成部分后端编写任务
+  \item 参与数据库表的设计
+  \item 和前端协商实现自己的url参数处理,简化代码量
+  \item 前后端分离, 结合restful思想
+  \item 使用阿里接口, 实现短信业务
+\end{itemize}
+关键词
+
+gin, mysql, 阿里相关服务
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{智能终端跟踪系统}}{\url{}}
+\role{Python, Linux}{团队项目}
+\begin{onehalfspacing}
+用于跟踪洒水车和农业喷药无人机的数据管理和监控
+
+工作
+\begin{itemize}
+  \item 使用自己团队的easyapi 完成部分后端编写任务
+  \item 参与数据库表的设计
+  \item 前后端分离, 结合restful思想
+  \item 和前端一起实现了一个较为好用的运行报告渲染系统
+\end{itemize}
+关键词
+
+easyapi, mysql, redis
+\end{onehalfspacing}
+
+
+\section{\faCogs\ IT 技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 编程语言: Golang Python C
+  \item 平台: Linux
+  \item Web后端知识: 熟练使用flask gin 进行后端开发, Mysql相关知识, Redis相关知识, 了解并简单使用过kafka nginx 
+  \item 计算机网络: 熟练掌握HTTP协议, 了解TCP/IP协议, Socket编程 和 常见的并发模型
+  \item 计算机科学常识: 掌握常见的算法以及数据结构, 了解unix操作系统及其环境编程
+\end{itemize}
+
+
+
+\section{\faInfo\ 其他}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item GitHub: https://github.com/Victordong
+  \item 语言: 英语 - CET-4
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
