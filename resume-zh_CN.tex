@@ -39,16 +39,11 @@
 \datedsubsection{\textbf{easy api}}{\url{https://github.com/Victordong/async_easyapi}}
 \role{Python, Linux}{团队项目}
 \begin{onehalfspacing}
-基于 sqlalchemy, flask 的 sync版本
-
-基于 sqlalchemy, quart 的 async版本
-
-简化curd处理逻辑, 通过类的继承实现单独表的curd
+  基于salalchemy flask asyncio 提供了基于类,快速curd后端api构建的功能
 \begin{itemize}
   \item 简化curd逻辑
   \item 封装事务
   \item 封装自己的错误处理
-  \item 已投入生产使用
 \end{itemize}
 \end{onehalfspacing}
 
@@ -61,13 +56,10 @@
 
 工作
 \begin{itemize}
-  \item 完成大部分后端编写任务,并在完成基本功能后进行了重构
-  \item 参与数据库表的设计
-  \item 和前端协商实现自己的url参数处理,简化代码量
-  \item 使用mongodb存储问卷表结构和数据,便于更新问卷表结构
-  \item 使用kafka降低后端模块间的耦合
-  \item 利用redis存储计算数据降低系统负载
-  \item 前后端分离, 结合restful思想
+  \item 完成大部分后端编写任务, 参与数据库表的设计
+  \item 基于mongodb实现便于更新的问卷表结构,易于存储表的填写结果
+  \item 基于kafka降低后端模块间的耦合
+  \item 基于redis存储计算数据降低系统负载
 \end{itemize}
 关键词
 
@@ -81,10 +73,8 @@ flask, mysql, mongodb, redis, kafka
 
 工作
 \begin{itemize}
-  \item 完成部分后端编写任务
-  \item 参与数据库表的设计
+  \item 完成部分后端编写任务, 参与数据库表的设计
   \item 和前端协商实现自己的url参数处理,简化代码量
-  \item 前后端分离, 结合restful思想
   \item 使用阿里接口, 实现短信业务
 \end{itemize}
 关键词
@@ -99,10 +89,9 @@ gin, mysql, 阿里相关服务
 
 工作
 \begin{itemize}
-  \item 使用自己团队的easyapi 完成部分后端编写任务
-  \item 参与数据库表的设计
-  \item 前后端分离, 结合restful思想
-  \item 和前端一起实现了一个较为好用的运行报告渲染系统
+  \item 使用自己团队的easyapi 编写完成部分后端任务, 参与数据库表的设计
+  \item 使用jinja渲染模版,和前端一起实现了一个较为好用的运行报告渲染系统
+  \item 使用redis和captcha实现了一个api可用的验证码生成校验
 \end{itemize}
 关键词
 
